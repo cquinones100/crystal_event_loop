@@ -25,8 +25,6 @@ class Loop
 
   def kill : Nil
     @alive = false
-
-    puts "loop killed"
   end
 
   def execute_tick : Nil
@@ -70,7 +68,7 @@ class Loop
   end
 
   def sleep_ticks(ticks : Int32 | Float64) : Nil
-    sleep ticks
+    sleep @tick_speed * ticks
   end
 
   def keep_running : Nil

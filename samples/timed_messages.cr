@@ -1,0 +1,3 @@
+class TimedMessages
+
+end
